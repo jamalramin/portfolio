@@ -1,0 +1,1136 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(---purple);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background-color: var(---purple);
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+:root {
+  ---purple: purple;
+  ---wht: #fff;
+  ---blk: #000;
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.container {
+  height: 2300px;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+  border-bottom: 5px solid white;
+  width: 100%;
+}
+
+.container header section img {
+  height: 20px;
+  width: 100px;
+  z-index: 100px;
+  mix-blend-mode: multiply;
+}
+
+.container header section ul {
+  display: flex;
+  align-items: center;
+}
+
+.container header section ul li {
+  list-style: none;
+}
+
+.container header section ul a:nth-child(5) {
+  background-color: var(---purple);
+  color: var(---wht);
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  margin-left: 25px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.container header section ul a:nth-child(5):hover {
+  background-color: transparent;
+  color: var(---purple);
+  border: 2px solid var(---purple);
+}
+
+/* this is for wrapper section  */
+.wrapper header section ul a:nth-child(5) {
+  background-color: var(---purple);
+  color: var(---wht);
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  margin-left: 25px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.wrapper header section ul a:nth-child(5):hover {
+  background-color: transparent;
+  color: var(---purple);
+  border: 2px solid var(---purple);
+}
+
+.container header section ul li a {
+  color: var(---blk);
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px;
+  position: relative;
+  padding: 7px 0;
+  transition-duration: 0.5s;
+}
+
+.container header section:last-child {
+  display: none;
+}
+
+.container .home {
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 150px 200px 150px;
+  background-color: var(---purple);
+  color: var(---wht);
+  border-bottom: 10px solid white;
+  clip-path: polygon(
+    100% 0%,
+    0% 0%,
+    0% 78.24%,
+    2% 78.15%,
+    4% 77.89%,
+    6% 77.48%,
+    8% 76.93%,
+    10% 76.27%,
+    12% 75.55%,
+    14% 74.81%,
+    16% 74.08%,
+    18% 73.42%,
+    20% 72.85%,
+    22% 72.41%,
+    24% 72.12%,
+    26% 72.01%,
+    28% 72.07%,
+    30% 72.3%,
+    32% 72.69%,
+    34% 73.23%,
+    36% 73.87%,
+    38% 74.58%,
+    40% 75.32%,
+    42% 76.05%,
+    44% 76.73%,
+    46% 77.32%,
+    48% 77.78%,
+    50% 78.09%,
+    52% 78.23%,
+    54% 78.2%,
+    56% 77.99%,
+    58% 77.62%,
+    60% 77.11%,
+    62% 76.49%,
+    64% 75.78%,
+    66% 75.04%,
+    68% 74.31%,
+    70% 73.62%,
+    72% 73.02%,
+    74% 72.53%,
+    76% 72.19%,
+    78% 72.02%,
+    80% 72.03%,
+    82% 72.21%,
+    84% 72.55%,
+    86% 73.05%,
+    88% 73.65%,
+    90% 74.35%,
+    92% 75.08%,
+    94% 75.82%,
+    96% 76.52%,
+    98% 77.14%,
+    100% 77.65%
+  );
+}
+
+.container .home article .message {
+  position: relative;
+  height: 45px;
+  width: 300px;
+  border: 2px solid white;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.container .home article .message input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 75px 0 20px;
+  font-size: 15px;
+}
+
+.container .home article h1 {
+  font-size: 35px;
+  font-family: "Parisienne", cursive;
+}
+
+.container .home article p {
+  margin: 20px 0;
+}
+
+.container .home article .message ion-icon {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: var(---purple);
+  color: var(---wht);
+  padding: 15px;
+}
+.container .home section img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.container .about {
+  position: relative;
+  bottom: 190px;
+  height: 600px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 150px 0px 150px;
+  clip-path: polygon(
+    100% 100%,
+    0% 100%,
+    0% 6.89%,
+    1% 6.88%,
+    2% 6.85%,
+    3% 6.79%,
+    4% 6.71%,
+    5% 6.62%,
+    6% 6.5%,
+    7% 6.36%,
+    8% 6.21%,
+    9% 6.04%,
+    10% 5.85%,
+    11% 5.65%,
+    12% 5.44%,
+    13% 5.22%,
+    14% 5%,
+    15% 4.76%,
+    16% 4.53%,
+    17% 4.29%,
+    18% 4.05%,
+    19% 3.82%,
+    20% 3.59%,
+    21% 3.37%,
+    22% 3.16%,
+    23% 2.95%,
+    24% 2.76%,
+    25% 2.59%,
+    26% 2.43%,
+    27% 2.28%,
+    28% 2.16%,
+    29% 2.06%,
+    30% 1.97%,
+    31% 1.91%,
+    32% 1.87%,
+    33% 1.85%,
+    34% 1.85%,
+    35% 1.88%,
+    36% 1.93%,
+    37% 2%,
+    38% 2.09%,
+    39% 2.2%,
+    40% 2.33%,
+    41% 2.48%,
+    42% 2.64%,
+    43% 2.82%,
+    44% 3.02%,
+    45% 3.23%,
+    46% 3.44%,
+    47% 3.67%,
+    48% 3.9%,
+    49% 4.13%,
+    50% 4.37%,
+    51% 4.61%,
+    52% 4.84%,
+    53% 5.07%,
+    54% 5.3%,
+    55% 5.51%,
+    56% 5.72%,
+    57% 5.91%,
+    58% 6.1%,
+    59% 6.26%,
+    60% 6.41%,
+    61% 6.54%,
+    62% 6.65%,
+    63% 6.74%,
+    64% 6.81%,
+    65% 6.86%,
+    66% 6.89%,
+    67% 6.89%,
+    68% 6.87%,
+    69% 6.83%,
+    70% 6.77%,
+    71% 6.68%,
+    72% 6.58%,
+    73% 6.45%,
+    74% 6.31%,
+    75% 6.15%,
+    76% 5.98%,
+    77% 5.79%,
+    78% 5.58%,
+    79% 5.37%,
+    80% 5.15%,
+    81% 4.92%,
+    82% 4.69%,
+    83% 4.45%,
+    84% 4.21%,
+    85% 3.98%,
+    86% 3.74%,
+    87% 3.52%,
+    88% 3.3%,
+    89% 3.09%,
+    90% 2.89%,
+    91% 2.7%,
+    92% 2.53%,
+    93% 2.38%,
+    94% 2.24%,
+    95% 2.12%,
+    96% 2.03%,
+    97% 1.95%,
+    98% 1.89%,
+    99% 1.86%,
+    100% 1.85%
+  );
+}
+
+.container .about section img {
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+}
+
+.container .about article {
+  width: 50%;
+}
+
+.container .about article .about-btns a {
+  padding: 9px 18px;
+  background-color: var(---purple);
+  color: var(---wht);
+  border: 2px solid transparent;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  top: 30px;
+  transition: 0.3s;
+}
+
+.container .about article .about-btns a:hover {
+  background-color: transparent;
+  border: 2px solid var(---purple);
+  color: var(---purple);
+}
+
+.container .about article h1 {
+  font-size: 35px;
+  padding: 10px 0;
+  color: var(---purple);
+}
+
+.container .about article p {
+  color: var(---blk);
+  text-align: justify;
+}
+
+.container .service {
+  position: relative;
+  bottom: 200px;
+  display: flex;
+  height: 800px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(---purple);
+  padding: 100px 20px 50px 20;
+  clip-path: polygon(
+    100% 100%,
+    0% 100%,
+    0% 11.13%,
+    1% 11.11%,
+    2% 11.15%,
+    3% 11.26%,
+    4% 11.42%,
+    5% 11.63%,
+    6% 11.91%,
+    7% 12.23%,
+    8% 12.61%,
+    9% 13.02%,
+    10% 13.48%,
+    11% 13.97%,
+    12% 14.48%,
+    13% 15.02%,
+    14% 15.58%,
+    15% 16.15%,
+    16% 16.72%,
+    17% 17.28%,
+    18% 17.84%,
+    19% 18.38%,
+    20% 18.9%,
+    21% 19.39%,
+    22% 19.85%,
+    23% 20.27%,
+    24% 20.64%,
+    25% 20.97%,
+    26% 21.24%,
+    27% 21.46%,
+    28% 21.63%,
+    29% 21.73%,
+    30% 21.78%,
+    31% 21.76%,
+    32% 21.68%,
+    33% 21.55%,
+    34% 21.35%,
+    35% 21.1%,
+    36% 20.8%,
+    37% 20.44%,
+    38% 20.04%,
+    39% 19.6%,
+    40% 19.13%,
+    41% 18.62%,
+    42% 18.09%,
+    43% 17.54%,
+    44% 16.98%,
+    45% 16.41%,
+    46% 15.84%,
+    47% 15.28%,
+    48% 14.73%,
+    49% 14.2%,
+    50% 13.7%,
+    51% 13.23%,
+    52% 12.79%,
+    53% 12.4%,
+    54% 12.05%,
+    55% 11.75%,
+    56% 11.51%,
+    57% 11.32%,
+    58% 11.19%,
+    59% 11.12%,
+    60% 11.12%,
+    61% 11.17%,
+    62% 11.28%,
+    63% 11.45%,
+    64% 11.68%,
+    65% 11.96%,
+    66% 12.29%,
+    67% 12.68%,
+    68% 13.1%,
+    69% 13.56%,
+    70% 14.06%,
+    71% 14.58%,
+    72% 15.12%,
+    73% 15.68%,
+    74% 16.25%,
+    75% 16.82%,
+    76% 17.38%,
+    77% 17.94%,
+    78% 18.47%,
+    79% 18.99%,
+    80% 19.47%,
+    81% 19.92%,
+    82% 20.33%,
+    83% 20.7%,
+    84% 21.02%,
+    85% 21.29%,
+    86% 21.5%,
+    87% 21.65%,
+    88% 21.74%,
+    89% 21.78%,
+    90% 21.75%,
+    91% 21.66%,
+    92% 21.52%,
+    93% 21.31%,
+    94% 21.05%,
+    95% 20.74%,
+    96% 20.38%,
+    97% 19.97%,
+    98% 19.52%,
+    99% 19.04%,
+    100% 18.53%
+  );
+}
+
+.container .service div {
+  height: 350px;
+  width: 470px;
+  border: 3px solid var(---wht);
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 30px 40px 30px;
+  transition-duration: 0.5s;
+}
+
+.container .service div:hover {
+  transform: scale(0.97);
+}
+
+.container .service div ion-icon {
+  font-size: 55px;
+  color: var(---wht);
+}
+
+.container .service div p {
+  color: var(---wht);
+  text-align: justify;
+  font-size: 14px;
+}
+
+.container .service div h2 {
+  padding: 10px 0 7px 0;
+  color: var(---wht);
+}
+
+/* this part belongs to the footer section  */
+
+.container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 200px 350px 0px 350px;
+  position: relative;
+  bottom: 370px;
+  height: 420px;
+  overflow: visible;
+  background-color: var(---wht);
+  clip-path: polygon(
+    100% 100%,
+    0% 100%,
+    0% 36.59%,
+    2% 36.47%,
+    4% 36.09%,
+    6% 35.49%,
+    8% 34.67%,
+    10% 33.68%,
+    12% 32.53%,
+    14% 31.28%,
+    16% 29.97%,
+    18% 28.64%,
+    20% 27.34%,
+    22% 26.12%,
+    24% 25.02%,
+    26% 24.08%,
+    28% 23.33%,
+    30% 22.8%,
+    32% 22.51%,
+    34% 22.47%,
+    36% 22.68%,
+    38% 23.13%,
+    40% 23.8%,
+    42% 24.68%,
+    44% 25.73%,
+    46% 26.92%,
+    48% 28.2%,
+    50% 29.52%,
+    52% 30.85%,
+    54% 32.12%,
+    56% 33.31%,
+    58% 34.36%,
+    60% 35.24%,
+    62% 35.92%,
+    64% 36.37%,
+    66% 36.58%,
+    68% 36.53%,
+    70% 36.24%,
+    72% 35.72%,
+    74% 34.97%,
+    76% 34.03%,
+    78% 32.93%,
+    80% 31.71%,
+    82% 30.41%,
+    84% 29.08%,
+    86% 27.76%,
+    88% 26.51%,
+    90% 25.37%,
+    92% 24.37%,
+    94% 23.55%,
+    96% 22.95%,
+    98% 22.58%,
+    100% 22.45%
+  );
+}
+
+.container footer h1 {
+  font-family: "Parisienne", cursive;
+  margin: 15px 0;
+  color: var(---purple);
+}
+
+.container footer section {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container footer section ion-icon {
+  font-size: 23px;
+}
+
+.container footer section p {
+  margin-left: 25px;
+  text-align: center;
+}
+
+.container footer .social-media a ion-icon {
+  font-size: 25px;
+}
+
+.container footer .social-media h3 {
+  margin: 15px 0;
+}
+
+#facebook {
+  color: #3b5998;
+}
+
+#youtube {
+  margin-top: 15px;
+  margin-left: 20px;
+  color: red;
+}
+
+/* this part belongs to the get in touch webpage  */
+
+.wrapper .getInTouch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 150px;
+  height: 80%;
+}
+
+.wrapper .getInTouch aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .getInTouch aside input {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid gray;
+  font-size: 15px;
+}
+
+.wrapper .getInTouch aside input:focus {
+  border: 1px solid var(---purple);
+}
+
+.wrapper .getInTouch aside h1 {
+  color: var(---purple);
+  font-size: 35px;
+  font-family: "Parisienne", cursive;
+  margin: 10px 0;
+}
+
+.wrapper .getInTouch aside textarea {
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.wrapper .getInTouch aside textarea:focus {
+  border: 1px solid var(---purple);
+}
+
+.wrapper .getInTouch aside input {
+  outline: none;
+  width: 100%;
+}
+
+.wrapper .getInTouch aside input:nth-child(5) {
+  background-color: var(---purple);
+  color: var(---wht);
+  border: none;
+}
+
+.wrapper .getInTouch .contact-image img {
+  height: 400px;
+  width: 400px;
+}
+
+.wrapper header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+  border-bottom: 5px solid white;
+  width: 100%;
+}
+
+.wrapper header section img {
+  height: 20px;
+  width: 100px;
+  z-index: 100px;
+  mix-blend-mode: multiply;
+}
+
+.wrapper header section ul {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper header section ul li {
+  list-style: none;
+}
+
+.wrapper header section ul a:nth-child(4) {
+  background-color: var(---purple);
+  color: var(---wht);
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  margin-left: 25px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.wrapper header section ul a:nth-child(4):hover {
+  background-color: transparent;
+  color: var(---purple);
+  border: 2px solid var(---purple);
+}
+
+.wrapper header section ul li a {
+  color: var(---blk);
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px;
+  position: relative;
+  padding: 7px 0;
+  transition-duration: 0.5s;
+}
+
+.wrapper header section:last-child {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+}
+
+/* this part is for navbar  */
+.wrapper nav {
+  display: none;
+}
+
+.container nav {
+  display: none;
+}
+
+/* this part belons  to the popupo section  */
+.wrapper .popup {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  background-color: var(---wht);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 30px 50px;
+  height: 300px;
+  width: 500px;
+  flex-direction: column;
+  border: 2px solid black;
+  margin: 0 auto;
+  transform: scale(0);
+}
+
+.wrapper .popup img {
+  position: absolute;
+  top: -50px;
+  height: 100px;
+  width: 100px;
+}
+
+.wrapper .popup p {
+  text-align: center;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.wrapper .popup button {
+  padding: 10px 30px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: var(---purple);
+  color: var(---wht);
+  transition: 0.5s;
+}
+
+.wrapper .popup button:hover {
+  background-color: var(---wht);
+  color: var(---purple);
+  border: 2px solid var(---purple);
+}
+
+/* this part belongs to the responsive sectoin  */
+@media screen and (max-width: 600px) {
+  .container header #bar {
+    display: flex;
+    font-size: 30px;
+  }
+  .container header {
+    padding: 20px;
+  }
+  .container header section:nth-child(2) {
+    display: none;
+  }
+
+  /* this part beongs to the home sectoin  */
+  .container .home {
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+
+  .container .home section img {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    bottom: 150px;
+  }
+
+  /* this part belongs to the about section  */
+  .container .about {
+    z-index: 0;
+    position: relative;
+    padding: 0px 40px 0 40px;
+    display: flex;
+    height: 900px;
+    flex-direction: column-reverse;
+  }
+
+  .container .about article {
+    padding-top: 80px;
+  }
+
+  .container .about .spans {
+    display: none;
+  }
+
+  .container .about section img {
+    height: 300px;
+    width: 300px;
+    margin: 120px 0;
+  }
+
+  .container .about article {
+    width: 100%;
+  }
+
+  /* this part belongs to the service section  */
+  .container .service {
+    padding-bottom: 10px;
+    display: flex;
+    position: relative;
+    bottom: 800px;
+    flex-direction: column;
+    width: 100%;
+    clip-path: polygon(
+      100% 100%,
+      0% 100%,
+      0% 26.81%,
+      2% 26.8%,
+      4% 26.82%,
+      6% 26.86%,
+      8% 26.93%,
+      10% 27.02%,
+      12% 27.13%,
+      14% 27.25%,
+      16% 27.38%,
+      18% 27.51%,
+      20% 27.63%,
+      22% 27.74%,
+      24% 27.84%,
+      26% 27.91%,
+      28% 27.97%,
+      30% 28%,
+      32% 28%,
+      34% 27.97%,
+      36% 27.92%,
+      38% 27.84%,
+      40% 27.75%,
+      42% 27.63%,
+      44% 27.51%,
+      46% 27.38%,
+      48% 27.26%,
+      50% 27.14%,
+      52% 27.03%,
+      54% 26.94%,
+      56% 26.87%,
+      58% 26.82%,
+      60% 26.8%,
+      62% 26.81%,
+      64% 26.84%,
+      66% 26.9%,
+      68% 26.98%,
+      70% 27.09%,
+      72% 27.2%,
+      74% 27.33%,
+      76% 27.45%,
+      78% 27.58%,
+      80% 27.7%,
+      82% 27.8%,
+      84% 27.89%,
+      86% 27.95%,
+      88% 27.99%,
+      90% 28%,
+      92% 27.98%,
+      94% 27.94%,
+      96% 27.88%,
+      98% 27.79%,
+      100% 27.68%
+    );
+    height: 2200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .service div {
+    width: 98%;
+    margin: 1px 0;
+    position: relative;
+    top: 260px;
+  }
+
+  /* this part belongs to the footer section  */
+  .container footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 120px 0;
+    height: 600px;
+    background-color: var(---wht);
+    position: relative;
+    bottom: 850px;
+    clip-path: polygon(
+      100% 100%,
+      0% 100%,
+      0% 1.33%,
+      2% 1.37%,
+      4% 1.47%,
+      6% 1.64%,
+      8% 1.88%,
+      10% 2.16%,
+      12% 2.48%,
+      14% 2.84%,
+      16% 3.21%,
+      18% 3.58%,
+      20% 3.95%,
+      22% 4.3%,
+      24% 4.61%,
+      26% 4.87%,
+      28% 5.09%,
+      30% 5.24%,
+      32% 5.32%,
+      34% 5.33%,
+      36% 5.27%,
+      38% 5.14%,
+      40% 4.95%,
+      42% 4.7%,
+      44% 4.4%,
+      46% 4.07%,
+      48% 3.71%,
+      50% 3.33%,
+      52% 2.96%,
+      54% 2.6%,
+      56% 2.26%,
+      58% 1.96%,
+      60% 1.72%,
+      62% 1.52%,
+      64% 1.4%,
+      66% 1.34%,
+      68% 1.35%,
+      70% 1.43%,
+      72% 1.58%,
+      74% 1.79%,
+      76% 2.06%,
+      78% 2.37%,
+      80% 2.72%,
+      82% 3.08%,
+      84% 3.46%,
+      86% 3.83%,
+      88% 4.18%,
+      90% 4.51%,
+      92% 4.79%,
+      94% 5.02%,
+      96% 5.19%,
+      98% 5.3%,
+      100% 5.33%
+    );
+  }
+
+  .container footer div {
+    margin: 20px 0;
+  }
+
+  /* this part belongs to the get in touch section  */
+  .wrapper .getInTouch {
+    padding: 20px;
+    height: 960px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .wrapper .getInTouch aside textarea {
+    width: 100%;
+  }
+
+  .wrapper .getInTouch .contact-image img {
+    height: 97%;
+    width: 97%;
+    border-radius: 30% 70% 71% 29% / 41% 36% 64% 59%;
+    /* border-radius: 30% 70% 31% 69% / 59% 20% 80% 41%; */
+  }
+
+  .wrapper header #bar {
+    display: flex;
+    font-size: 30px;
+  }
+  .wrapper header {
+    padding: 20px;
+  }
+  .wrapper header section:nth-child(2) {
+    display: none;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .wrapper nav {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 400px;
+    width: 0%;
+    overflow: hidden;
+    background-color: var(---wht);
+  }
+
+  .wrapper nav .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .wrapper nav a {
+    text-decoration: none;
+    color: var(---blk);
+    padding: 10px 100px;
+    margin: 10px 0;
+  }
+
+  .wrapper nav .x-mark ion-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: var(---blk);
+  }
+
+  .container nav {
+    z-index: 1;
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 400px;
+    width: 0%;
+    overflow: hidden;
+    background-color: var(---wht);
+  }
+
+  .container nav .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .container nav a {
+    text-decoration: none;
+    color: var(---blk);
+    padding: 10px 100px;
+    margin: 10px 0;
+  }
+
+  .container nav .x-mark ion-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: var(---blk);
+  }
+
+  .wrapper .popup {
+    width: 98%;
+    position: fixed;
+    left: 1%;
+    padding: 10px 20px;
+  }
+}

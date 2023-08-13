@@ -1,0 +1,183 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- scroll animation link  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- ion-icons link  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="icon" href="./images/logo2.png" />
+
+    <!-- css link   -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- javascipt link  -->
+    <script src="style.js"></script>
+
+    <!-- emailjs message  -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("oaazgMppMr1E9SHcT"); 
+        })();
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- this part belongs to the header section  -->
+      <header>
+        <section><img src="./images/logo.png" alt="" /></section>
+        <section>
+          <ul>
+            <li><a href=#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="./contact.htm" >Get in Touch</a>
+          </ul>
+        </section>
+        <section id="bar">
+          <ion-icon name="menu-outline" onclick="increase()"></ion-icon>
+        </section>
+      </header>
+
+      <!-- this part belongs to the navbar section  -->
+      <nav>
+        <div class="x-mark">
+          <ion-icon name="close-outline" onclick="dec()"></ion-icon>
+        </div>
+        <div class="links">
+          <a href="index.html#home" onclick="dec()">Home</a>
+          <a href="index.html#about"onclick="dec()">About</a>
+          <a href="index.html#service"onclick="dec()">Services</a>
+          <a href="index.html#contact"onclick="dec()">Contact</a>
+          <a href="contact.htm">Get in touch</a>
+          
+        </div>
+      </nav>
+
+      <!-- this part belongs to the home section  -->
+      <div class="home" id="home" data-aos="zoom-in">
+        <article>
+          <h1>Welcome</h1>
+          <h2>
+            I'm a <span style="color: var(---pnk)"> Website Designer</span>
+          </h2>
+          <p>With having a year experince of Coding</p>
+          <div class="message">
+            <input type="text" placeholder="Enter Message" id="gmassage"/><ion-icon name="send-outline" onclick="sendMail()"></ion-icon>
+          </div>
+        </article>
+        <section>
+          <img src="./images/IMG_20230127_141055_384.jpg" alt="" />
+        </section>
+      </div>
+
+      <!-- this part belongs to the about section  -->
+      <div class="about" id="about" data-aos="fade">
+        <section>
+          <img
+            src="./images/321658026_696618951868882_404906550939463653_n.jpg"
+            alt=""
+          />
+        </section>
+        <article>
+          <h1 style="font-family: Parisienne">
+            -- About <span style="color: var(---pink)"> Me --</span>
+          </h1>
+          <p>
+            My name is Ramin jamal. I am an Afghan Frontend developer . My skill
+            is to create simple websites using html , css & javascript for now .
+            On the other hand , i can carve beatiful designs on wood. Beside
+            website design & wood carving i have the capability to fix laptop
+            problems .
+          </p>
+          <div class="about-btns">
+            <a href="./contact.htm">Get In Touch With Me</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- this part belongs to the services section  -->
+      <div class="service" id="service" data-aos="fade-up">
+        <div id="ccc">
+          <ion-icon name="laptop-outline"></ion-icon>
+          <h2>Web Developer</h2>
+          <p>
+            Web development is the work involved in developing a website for the
+            Internet (World Wide Web) or an intranet (a private network).[1] Web
+            development can range from developing a simple single static page of
+            plain text to complex web applications, electronic businesses,
+          </p>
+        </div>
+        <div>
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <h2>Web Design</h2>
+          <p>
+            Web design is the art of planning and arranging content on a website
+            so that it can be shared and accessed online. If you need any
+            website i'm a frontend developer and i can help you make your own
+            website for the improvment of your bussiness .
+          </p>
+        </div>
+        <div>
+          <ion-icon name="tv-outline"></ion-icon>
+          <h2>fixing laptop</h2>
+          <p>
+            Computer is a machine which can be instructed to accept, process,
+            store and output data.In today's world one of the most important
+            tool's for the improvment of every soceity is Laptops and computers.
+            Some of the times they are not going to work anymore here i am to
+            fix it .
+          </p>
+        </div>
+        <div>
+          <ion-icon name="hammer-outline"></ion-icon>
+          <h2>Wood Carving</h2>
+          <p>
+            Wood carving is a type of woodworking in which people use knives,
+            chisels, and other hand-held wood carving tools to create beatiful
+            designs in pieces of wood for the decoration of houses , office and
+            other places. i have the skill to carve on wood .
+          </p>
+        </div>
+      </div>
+
+      <!-- this part belongs to the conatct section -->
+      <footer id="contact">
+        <div>
+          <h1>Contact Me</h1>
+          <h3>Get in touch with me with <br> Gmail & Phone Number</h3>
+          <section><ion-icon name="mail-outline"></ion-icon><p>Raminjamal1399@gmail.com</p></section>
+          <section><ion-icon name="call-outline"></ion-icon><p>(+93) 747616346</p></section>
+        </div>
+        <div class="social-media">
+          <h1>Social Media</h1>
+          <h3>Do you want to contact <br> me on social media</p>
+          <a href="https://www.facebook.com/ramin.jamal.75"><ion-icon name="logo-facebook" id="facebook" title="facebook"></ion-icon></a>
+          <a href="https://www.youtube.com/channel/UCTVrDtVpPXJedCis4uhpUjQ" ><ion-icon name="logo-youtube" id="youtube" title="youtube"></ion-icon></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- scroll script link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
