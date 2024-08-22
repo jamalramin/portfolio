@@ -636,14 +636,6 @@ body {
   margin: 15px 0;
 }
 
-.container footer .social-media .social-media-links {
-  margin: 5px 0;
-  display: flex;
-  justify-content:space-between;
-  align-self: center;
-}
-
-
 #facebook {
   color: #3b5998;
 }
@@ -652,17 +644,6 @@ body {
   color: red;
 }
 
-#snapchat {
-  color: var(---yellow);
-}
-
-#whatsapp {
-  color: var(---green);
-}
-
-#github {
-  color: var(---blk);
-}
 /* this part belongs to the get in touch webpage  */
 
 .wrapper .getInTouch {
