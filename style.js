@@ -3,11 +3,23 @@ function sendMail() {
     name: document.getElementById("name").value,
     lname: document.getElementById("lname").value,
     email: document.getElementById("email").value,
-    gmessage: document.getElementById("gmassage").value,
   };
   emailjs
     .send("service_9caae1v", "template_s87404r", params)
-    .then(function (res) {});
+    .then(function (res) { });
+}
+
+function sendGmessage() {
+
+  var params = {
+    gmessage: document.getElementById("gmessage").value
+  }
+
+  emailjs
+    .send("service_9caae1v", "template_s87404r", params)
+    .then(function (res) { });
+  
+  document.getElementById("gmessage").value = "";
 }
 
 function increase() {
@@ -34,4 +46,6 @@ function clean() {
 
 function hidePopup() {
   document.querySelector(".popup").style.transform = "scale(0)";
+  document.getElementById("submit").value = "Send";
+
 }

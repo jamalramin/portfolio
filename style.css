@@ -27,6 +27,8 @@
   ---purple: purple;
   ---wht: #fff;
   ---blk: #000;
+  ---yellow : #FFFC00;
+  ---green : #25D366;
 }
 
 body {
@@ -61,6 +63,11 @@ body {
 
 .container header section ul li {
   list-style: none;
+  transition-duration:0.5s;
+}
+
+.container header section ul li:hover {
+  transform: scale(1.1);
 }
 
 .container header section ul a:nth-child(5) {
@@ -629,16 +636,33 @@ body {
   margin: 15px 0;
 }
 
+.container footer .social-media .social-media-links {
+  margin: 5px 0;
+  display: flex;
+  justify-content:space-between;
+  align-self: center;
+}
+
+
 #facebook {
   color: #3b5998;
 }
 
 #youtube {
-  margin-top: 15px;
-  margin-left: 20px;
   color: red;
 }
 
+#snapchat {
+  color: var(---yellow);
+}
+
+#whatsapp {
+  color: var(---green);
+}
+
+#github {
+  color: var(---blk);
+}
 /* this part belongs to the get in touch webpage  */
 
 .wrapper .getInTouch {
@@ -875,6 +899,7 @@ body {
 
   /* this part belongs to the service section  */
   .container .service {
+    /* margin-top: 600px; */
     padding-bottom: 10px;
     display: flex;
     position: relative;
@@ -1027,18 +1052,16 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 0;
   }
 
   .wrapper .getInTouch aside textarea {
     width: 100%;
+    font-size: 18px;
   }
 
   .wrapper .getInTouch .contact-image img {
-    height: 97%;
-    width: 97%;
+    transform: scale(0.8);
     border-radius: 30% 70% 71% 29% / 41% 36% 64% 59%;
-    /* border-radius: 30% 70% 31% 69% / 59% 20% 80% 41%; */
   }
 
   .wrapper header #bar {
@@ -1064,7 +1087,8 @@ body {
     height: 400px;
     width: 0%;
     overflow: hidden;
-    background-color: var(---wht);
+    background-color: rgb(243, 243, 243);
+
   }
 
   .wrapper nav .links {
@@ -1080,7 +1104,7 @@ body {
     text-decoration: none;
     color: var(---blk);
     padding: 10px 100px;
-    margin: 10px 0;
+    margin: 8px 0;
   }
 
   .wrapper nav .x-mark ion-icon {
@@ -1100,7 +1124,7 @@ body {
     height: 400px;
     width: 0%;
     overflow: hidden;
-    background-color: var(---wht);
+    background-color: rgb(243, 243, 243);
   }
 
   .container nav .links {
@@ -1132,5 +1156,6 @@ body {
     position: fixed;
     left: 1%;
     padding: 10px 20px;
+    z-index:1;
   }
 }
