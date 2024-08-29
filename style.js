@@ -10,16 +10,23 @@ function sendMail() {
 }
 
 function sendGmessage() {
+	var x = document.getElementById("gmessage").value;
 
-  var params = {
-    gmessage: document.getElementById("gmessage").value
-  }
+	if (x === "") {
+		alert("The message can't be empty !");
+		return false;
+	}
+	var params = {
+		gmessage: document.getElementById("gmessage").value,
+	};
 
-  emailjs
-    .send("service_9caae1v", "template_s87404r", params)
-    .then(function (res) { });
-  
-  document.getElementById("gmessage").value = "";
+	emailjs
+		.send("service_9caae1v", "template_s87404r", params)
+		.then(function (res) {});
+
+	document.getElementById("gmessage").value = "";
+
+	return true;
 }
 
 function increase() {
