@@ -788,10 +788,12 @@ body {
 /* this part is for navbar  */
 .wrapper nav {
   display: none;
+  background-image: linear-gradient(45deg , rgb(243, 243, 243)  , purple);
 }
 
 .container nav {
   display: none;
+  background-image: linear-gradient(45deg , rgb(243, 243, 243)  , purple);
 }
 
 /* this part belons  to the popupo section  */
