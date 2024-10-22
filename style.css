@@ -844,7 +844,6 @@ body {
 /* this part belongs to the responsive sectoin  */
 @media screen and (max-width: 600px) {
   .container header #bar {
-    background-image: linear-gradient(45deg , white  , purple);
     display: flex;
     font-size: 30px;
   }
@@ -1088,7 +1087,7 @@ body {
     height: 400px;
     width: 0%;
     overflow: hidden;
-    background-color: rgb(243, 243, 243);
+    background-image: linear-gradient(45deg , white  , purple);
 
   }
 
