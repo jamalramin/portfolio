@@ -903,7 +903,6 @@ body {
 
   /* this part belongs to the service section  */
   .container .service {
-    margin-top: 60px;
     padding-bottom: 10px;
     display: flex;
     position: relative;
@@ -965,7 +964,7 @@ body {
       98% 27.79%,
       100% 27.68%
     );
-    height: 1500px;
+    height: 1700px;
     align-items: center;
     justify-content: center;
   }
