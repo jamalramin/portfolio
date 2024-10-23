@@ -903,11 +903,11 @@ body {
 
   /* this part belongs to the service section  */
   .container .service {
-    /* margin-top: 600px; */
+    margin-top: 60px;
     padding-bottom: 10px;
     display: flex;
     position: relative;
-    bottom: 300px;
+    bottom: 800px;
     flex-direction: column;
     width: 100%;
     clip-path: polygon(
