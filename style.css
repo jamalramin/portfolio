@@ -1100,6 +1100,7 @@ body {
     text-align: center;
     flex-direction: column;
     margin-top: 60px;
+    background-color: #ececec;
   }
 
   .wrapper nav a {
