@@ -1064,7 +1064,6 @@ body {
 
   .wrapper .getInTouch .contact-image img {
     transform: scale(0.8);
-    border-radius: 30% 70% 71% 29% / 41% 36% 64% 59%;
   }
 
   .wrapper header #bar {
