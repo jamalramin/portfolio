@@ -1127,7 +1127,7 @@ body {
     height: 400px;
     width: 0%;
     overflow: hidden;
-    background-color: rgb(243, 243, 243);
+    background-color: #ececec;
   }
 
   .container nav .links {
